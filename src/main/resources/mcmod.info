@@ -1,0 +1,16 @@
+[
+{
+  "modid": "simelyaressources",
+  "name": "Ressources Simelya",
+  "description": "Toutes les ressources de Simelya",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Cashandrick"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
