@@ -15,9 +15,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 // Informations du mod
 @Mod(modid = References.MODID, name = References.NAME, version = References.VERSION)
 public class SimelyaRessourcesMain {
+
     // Décalaration de l'instance de Main
     @Mod.Instance(References.MODID)
     public static SimelyaRessourcesMain instance;
+
     // Déclaration de l'instance de proxy
     @SidedProxy(clientSide = References.CP, serverSide = References.SP)
     public static CommonProxy proxy;
