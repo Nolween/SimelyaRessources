@@ -22,7 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-run/
-
 \.idea/
 \.gradle/
+#Virer les mondes générés
+saves/
+#Virer les runs et build qui alourdissent
+run/
+build/
+# Garder le gradle-wrapper dans git
+!gradle/wrapper/gradle-wrapper.jar
