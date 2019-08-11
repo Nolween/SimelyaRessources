@@ -1,6 +1,7 @@
 package fr.cashandrick.simelyaressources.init;
 
 import com.google.common.collect.Lists;
+import fr.cashandrick.simelyaressources.SimelyaRessourcesMain;
 import fr.cashandrick.simelyaressources.items.SimBaseItem;
 import fr.cashandrick.simelyaressources.utils.References;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -29,7 +30,7 @@ public class ModItems {
         // Initialisation de la liste des items
         items = Lists.newArrayList();
         /* Ajout des items basiques */
-        myr = new SimBaseItem("myr");
+        myr = new SimBaseItem("myr").setCreativeTab(SimelyaRessourcesMain.tabDivers);
     }
 
     /*Event de Forge appelé à la préinitialisation et attribution des textures*/

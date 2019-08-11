@@ -1,6 +1,7 @@
 package fr.cashandrick.simelyaressources.init;
 
 import com.google.common.collect.Lists;
+import fr.cashandrick.simelyaressources.SimelyaRessourcesMain;
 import fr.cashandrick.simelyaressources.blocks.SimBaseBlock;
 import fr.cashandrick.simelyaressources.utils.References;
 import net.minecraft.block.Block;
@@ -33,7 +34,7 @@ public class ModBlocks {
         blocks = Lists.newArrayList();
 
         /* Définition des blocks */
-        acacia_1_blanc = new SimBaseBlock("acacia_1_blanc", Material.WOOD, 3.0f, 20.0f, 0, "axe");
+        acacia_1_blanc = new SimBaseBlock("acacia_1_blanc", Material.WOOD, 3.0f, 20.0f, 0, "axe").setCreativeTab(SimelyaRessourcesMain.tabBois);
 
         /* Création des items blocks dans le registre */
         for (Block block : blocks) {
