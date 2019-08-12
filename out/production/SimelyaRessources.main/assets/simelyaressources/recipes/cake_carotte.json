@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "W W"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "simelyaressources:cake_carotte",
+    "count": 4
+  }
+}
