@@ -3,9 +3,11 @@ package fr.cashandrick.simelyaressources.init;
 import com.google.common.collect.Lists;
 import fr.cashandrick.simelyaressources.SimelyaRessourcesMain;
 import fr.cashandrick.simelyaressources.items.SimBaseItem;
+import fr.cashandrick.simelyaressources.items.SimFoodItem;
 import fr.cashandrick.simelyaressources.utils.References;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -19,7 +21,12 @@ public class ModItems {
 
     public static final ModItems INSTANCE = new ModItems();
 
+    /** Objets Basiques */
     public static Item myr;
+
+    /** Nourriture */
+    public static ItemFood cake_carotte;
+
     /* Liste de tous les items en private */
     private List<Item> items;
 
@@ -29,8 +36,11 @@ public class ModItems {
     public void init() {
         // Initialisation de la liste des items
         items = Lists.newArrayList();
-        /* Ajout des items basiques */
+        /** Ajout des items*/
+        /* Items basiques*/
         myr = new SimBaseItem("myr").setCreativeTab(SimelyaRessourcesMain.tabDivers);
+        /* Items nourriture*/
+        cake_carotte = new SimFoodItem("cake_carotte", 4, 3.6f, false);
     }
 
     /*Event de Forge appelé à la préinitialisation et attribution des textures*/

@@ -2,6 +2,7 @@ package fr.cashandrick.simelyaressources;
 
 
 import fr.cashandrick.simelyaressources.ct.DiversTab;
+import fr.cashandrick.simelyaressources.ct.FoodTab;
 import fr.cashandrick.simelyaressources.ct.WoodTab;
 import fr.cashandrick.simelyaressources.events.RegistringEvent;
 import fr.cashandrick.simelyaressources.init.ModBlocks;
@@ -32,6 +33,7 @@ public class SimelyaRessourcesMain {
     /** Création des Tabs*/
     public static final CreativeTabs tabDivers = new DiversTab("tabdivers");
     public static final CreativeTabs tabBois = new WoodTab("tabbois");
+    public static final CreativeTabs tabFood = new FoodTab("tabfood");
 
     public SimelyaRessourcesMain() {
         MinecraftForge.EVENT_BUS.register(new RegistringEvent());
