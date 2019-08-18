@@ -13,9 +13,6 @@ public class SimBaseItem extends Item {
         // Définition du nom de l'item
         setRegistryName(name).setUnlocalizedName(name);
 
-
-
-
         // Ajout de l'item dans l'instance
         ModItems.INSTANCE.getItems().add(this);
     }

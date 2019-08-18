@@ -1,6 +1,8 @@
 itemGroup.tabdivers=Simelya Others
 itemGroup.tabbois=Simelya Woods
+itemGroup.tabfood=Simelya Food
 
 item.myr.name=Myr
+item.preparation_cake_carotte.name=Preparation for carrot Cake
 item.cake_carotte.name=Carrot Cake
 tile.acacia_1_blanc.name=Acacia 1 White

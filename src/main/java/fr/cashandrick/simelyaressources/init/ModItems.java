@@ -21,10 +21,17 @@ public class ModItems {
 
     public static final ModItems INSTANCE = new ModItems();
 
-    /** Objets Basiques */
+    /**
+     * FAMILLE BASIQUE
+     */
     public static Item myr;
 
-    /** Nourriture */
+    /**
+     * FAMILLE NOURRITURE
+     */
+    /* Préparations*/
+    public static Item preparation_cake_carotte;
+    /* Nourritures*/
     public static ItemFood cake_carotte;
 
     /* Liste de tous les items en private */
@@ -36,10 +43,14 @@ public class ModItems {
     public void init() {
         // Initialisation de la liste des items
         items = Lists.newArrayList();
+        /********* **********/
         /** Ajout des items*/
+        /********* **********/
         /* Items basiques*/
         myr = new SimBaseItem("myr").setCreativeTab(SimelyaRessourcesMain.tabDivers);
-        /* Items nourriture*/
+        /* Items préparation nourriture*/
+        preparation_cake_carotte = new SimBaseItem("preparation_cake_carotte").setCreativeTab(SimelyaRessourcesMain.tabFood);
+        /* Items  nourriture*/
         cake_carotte = new SimFoodItem("cake_carotte", 4, 3.6f, false);
     }
 

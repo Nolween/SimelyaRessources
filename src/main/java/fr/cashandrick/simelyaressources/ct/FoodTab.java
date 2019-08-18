@@ -18,6 +18,6 @@ public class FoodTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(ModItems.cake_carotte);
+        return new ItemStack(ModItems.preparation_cake_carotte);
     }
 }

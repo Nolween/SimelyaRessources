@@ -3,6 +3,7 @@ package fr.cashandrick.simelyaressources.items;
 import fr.cashandrick.simelyaressources.SimelyaRessourcesMain;
 import fr.cashandrick.simelyaressources.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -26,7 +27,7 @@ public class SimFoodItem extends ItemFood {
 //    @Override
 //    protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
 //        // Exemple ici, le joueur va avoir un effet de speed
-//        player.addPotionEffect((new PotionEffect(Potion.getPotionById(1))));
+//        player.addPotionEffect((new PotionEffect(MobEffects.HASTE, 2, 0)));
 //    }
 
 }
